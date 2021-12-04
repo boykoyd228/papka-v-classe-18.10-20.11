@@ -1,0 +1,7 @@
+public static double GetPrice(double price)
+{
+    double s=0.1, p=0.3, M=3000, N=5000;
+    if(price<=M) return price;
+    else if(price>M & price<=N) return price-price*s;
+    else return price-price*p;
+}
